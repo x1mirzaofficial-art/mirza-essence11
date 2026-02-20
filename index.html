@@ -1,1 +1,207 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mirza Essence | Luxury Fragrance</title>
+
+<meta name="description" content="Mirza Essence Premium Luxury Perfumes">
+<meta name="keywords" content="Luxury Perfume, Oud, Fragrance, Premium Scent">
+<meta name="author" content="Mirza Essence">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- ================= LOADER ================= -->
+<div id="loader">
+  <h1>MIRZA ESSENCE</h1>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+  <div class="nav-container">
+    <div class="logo">MIRZA ESSENCE</div>
+
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="cart-area">
+      <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="hero">
+  <div class="hero-content">
+    <h1>Luxury Redefined</h1>
+    <p>Premium Fragrances Crafted For Powerful Personalities</p>
+    <button id="shopNowBtn">Shop Collection</button>
+  </div>
+</section>
+
+<!-- ================= FEATURED PRODUCTS ================= -->
+<section id="collection">
+  <h2>Featured Collection</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card" data-id="1">
+      <div class="product-image"></div>
+      <h3>Oud Royal</h3>
+      <p>Deep. Bold. Magnetic.</p>
+      <span class="price">$89</span>
+      <button class="add-to-cart" data-name="Oud Royal" data-price="89">
+        Add To Cart
+      </button>
+    </div>
+
+    <div class="product-card" data-id="2">
+      <div class="product-image"></div>
+      <h3>Midnight Musk</h3>
+      <p>Smooth. Dark. Addictive.</p>
+      <span class="price">$79</span>
+      <button class="add-to-cart" data-name="Midnight Musk" data-price="79">
+        Add To Cart
+      </button>
+    </div>
+
+    <div class="product-card" data-id="3">
+      <div class="product-image"></div>
+      <h3>Golden Amber</h3>
+      <p>Warm. Rich. Premium.</p>
+      <span class="price">$99</span>
+      <button class="add-to-cart" data-name="Golden Amber" data-price="99">
+        Add To Cart
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CART DRAWER ================= -->
+<div id="cartDrawer">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="closeCart">X</button>
+  </div>
+
+  <div id="cartItems"></div>
+
+  <div class="cart-footer">
+    <h3>Total: $<span id="cartTotal">0</span></h3>
+    <button id="checkoutBtn">Proceed To Checkout</button>
+  </div>
+</div>
+
+<!-- ================= CHECKOUT SECTION ================= -->
+<section id="checkout">
+  <h2>Checkout</h2>
+
+  <form id="checkoutForm">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Shipping Address" required>
+    <input type="text" placeholder="City" required>
+    <input type="text" placeholder="Postal Code" required>
+
+    <h3>Payment Information</h3>
+
+    <input type="text" placeholder="Card Number">
+    <input type="text" placeholder="Expiry Date">
+    <input type="text" placeholder="CVV">
+
+    <button type="submit">Place Order</button>
+  </form>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <h2>About Mirza Essence</h2>
+  <p>
+    Mirza Essence represents power, elegance, and timeless luxury.
+    Every fragrance is crafted with precision and premium ingredients.
+  </p>
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+<section id="newsletter">
+  <h2>Join Our Luxury Circle</h2>
+  <input type="email" placeholder="Enter your email">
+  <button id="subscribeBtn">Subscribe</button>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <h2>Contact Us</h2>
+
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- ================= ADMIN PANEL STRUCTURE ================= -->
+<section id="adminPanel">
+  <h2>Admin Dashboard (Hidden)</h2>
+
+  <div class="admin-login">
+    <input type="password" placeholder="Admin Password">
+    <button>Login</button>
+  </div>
+
+  <div class="admin-content">
+    <h3>Orders</h3>
+    <div id="orderList"></div>
+
+    <h3>Add Product</h3>
+    <input type="text" placeholder="Product Name">
+    <input type="number" placeholder="Price">
+    <button>Add Product</button>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-content">
+    <div>
+      <h3>MIRZA ESSENCE</h3>
+      <p>Luxury Redefined.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Follow Us</h4>
+      <p>Instagram</p>
+      <p>Facebook</p>
+      <p>Twitter</p>
+    </div>
+  </div>
+
+  <p>© 2026 Mirza Essence. All Rights Reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+  </html>
